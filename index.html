@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приглашение на свадьбу</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Анна & Дмитрий</h1>
+    <h2>Приглашение на свадьбу</h2>
+
+    <div class="section">
+      <p><strong>Дата:</strong> 15 июля 2025 года</p>
+      <p><strong>Место:</strong> Загородный комплекс "Лавандовый Берег", Московская область</p>
+      <p><strong>Начало:</strong> 15:00</p>
+    </div>
+
+    <div class="section">
+      <h3>Меню</h3>
+      <ul>
+        <li>Тарталетки с муссом из лосося</li>
+        <li>Сырное ассорти и овощи</li>
+        <li>Утка в медово-апельсиновом соусе</li>
+        <li>Картофель гратен, овощи-гриль</li>
+        <li>Свадебный торт, макароны и зефир</li>
+        <li>Игристое вино, коктейли, чай и лимонад</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Подтвердите присутствие</h3>
+      <form id="rsvpForm">
+        <label for="name">Имя Фамилия</label>
+        <input type="text" id="name" required>
+
+        <label for="guests">Укажите, кто придёт вместе с вами</label>
+        <input type="text" id="guests" placeholder="например: Иван Иванов, Мария Петрова">
+
+        <label for="menu">Пожелания по меню</label>
+        <select id="menu">
+          <option value="none">Обычное меню</option>
+          <option value="veg">Вегетарианское меню</option>
+        </select>
+
+        <label for="preferences">Дополнительные пожелания по еде и алкоголю</label>
+        <input type="text" id="preferences" placeholder="например: без алкоголя, больше фруктов">
+
+        <div class="checkbox-group">
+          <label for="children">Будут ли дети?</label>
+          <input type="checkbox" id="children">
+        </div>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
